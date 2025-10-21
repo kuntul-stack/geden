@@ -5,13 +5,17 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "build": "echo 'No build step required for Node.js application'"
   },
   "dependencies": {
+    "@supabase/auth-helpers-shared": "^0.7.0",
+    "@supabase/supabase-js": "^2.76.0",
     "axios": "^1.11.0",
     "bcrypt": "^6.0.0",
     "cheerio": "^1.1.0",
     "compression": "^1.8.1",
+    "connect-pg-simple": "^10.0.0",
     "connect-sqlite3": "^0.9.16",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -23,7 +27,8 @@
     "pug": "^3.0.3",
     "request": "^2.88.2",
     "serverless-http": "^3.2.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
